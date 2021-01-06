@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.min.css" />
+    <script src="./js/main.js" type="module" defer></script>
     <title>SearchMe</title>
 </head>
 <body>
@@ -27,12 +28,12 @@
                 <span class="yellow">e</span>
                 <span class="red exclaim">!</span>
             </div>
-            <form id="searchBar" class="searchBar">
+            <form id="searchBar" class="searchBar" role="search">
                 <label class="offscreen" for="search">
                     검색어를 입력
                 </label>
-                <input id="search" type="text" />
-                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">
+                <input id="search" type="text" role="searchbox" />
+                <div id="clear" class="button clear none" role="button" tabindex="0" aria-label="Clear search terms">
                     <i class="fas fa-times"></i>
                 </div>
                 <button id="searchButton" class="button searchButton blue" type="submit" aria-label="Submit button">
@@ -46,19 +47,7 @@
                 <div id="stats" class="stats aria-live="assertive""></div>
             </div>
             <div id="searchResults" class="searchResults">
-                <div class="resultItem">
-                    <div class="resultTitle">
-                        <a href="">kmckmc124124wq</a>
-                    </div>
-                    <div class="resultContents">
-                        <div class="resultImage">
-                            <img src="" alt="a" />
-                        </div>
-                        <div class="resultText">
-                            <p class="resultDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga itaque soluta suscipit totam accusamus odio, distinctio ipsam optio velit sit est pra</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
     </main>
